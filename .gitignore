@@ -1,0 +1,14 @@
+# Backup / scratch files
+index.backup*.html
+raw.html
+
+# Large zip download (122 MB — exceeds GitHub 100 MB per-file limit)
+assets/drive-download-20261101T090124Z-1-001.zip
+
+# Folder with duplicates of assets/images (10 files, ~130 MB saved)
+assets/drive-download-20261101T090124Z-1-001/
+
+# OS / tooling
+Thumbs.db
+.DS_Store
+.vscode/
