@@ -148,9 +148,40 @@
     }
   }
 
+  // ---- Thay tên khách theo query ?name=... ----
+  // VD: /thiepcuoi/?name=Bạn%20Trung  → "Bạn Lan" → "Bạn Trung" ở <h1> và trong <input name="name">
+  function applyGuestName() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var name = params.get("name") || params.get("guestName");
+      if (!name) return;
+      try { name = decodeURIComponent(name); } catch (e) {}
+      name = String(name).trim();
+      if (!name) return;
+
+      var OLD = "Bạn Lan";
+
+      // 1) H1 chứa đúng text "Bạn Lan" (tên khách in trong thiệp)
+      document.querySelectorAll("h1").forEach(function (el) {
+        if (el.textContent && el.textContent.trim() === OLD) el.textContent = name;
+      });
+
+      // 2) <input name="name"> mặc định có value="Bạn Lan" — set bằng native setter
+      //    để React cập nhật state nội bộ.
+      document.querySelectorAll('input[name="name"]').forEach(function (el) {
+        if (el.value !== OLD && el.value !== "") return;
+        var desc = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value");
+        if (desc && desc.set) desc.set.call(el, name); else el.value = name;
+        el.dispatchEvent(new Event("input", { bubbles: true }));
+      });
+    } catch (e) { /* ignore */ }
+  }
+
   function init() {
     buildButton();
     tryAutoplay();
+    // Thay tên khách lặp vài lần để chắc chắn chạy sau khi React hydrate xong
+    [0, 300, 1000, 2500].forEach(function (t) { setTimeout(applyGuestName, t); });
   }
 
   if (document.readyState === "loading") {
