@@ -1856,15 +1856,17 @@
                                     children: [
                                       (0, a.jsx)("option", {
                                         value: "",
-                                        children: "Bạn Có Tham Dự Không?",
+                                        children:
+                                          "Bạn Sẽ Tham Dự Cùng Chúng Mình Nhé?",
                                       }),
                                       (0, a.jsx)("option", {
                                         value: "true",
-                                        children: "Có Thể Tham Dự",
+                                        children: "Mình Sẽ Tham Dự Nha",
                                       }),
                                       (0, a.jsx)("option", {
                                         value: "false",
-                                        children: "Không Thể Tham Dự",
+                                        children:
+                                          "Tiếc Quá! Mình Không Thể Tham Dự Được Mất Rồi",
                                       }),
                                     ],
                                   }),

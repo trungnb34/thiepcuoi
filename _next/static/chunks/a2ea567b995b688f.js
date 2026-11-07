@@ -2633,15 +2633,16 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                         children: [
                           (0, t.jsx)("option", {
                             value: "",
-                            children: "Bạn Có Tham Dự Không?",
+                            children: "Bạn Sẽ Tham Dự Cùng Chúng Mình Nhé?",
                           }),
                           (0, t.jsx)("option", {
                             value: "true",
-                            children: "Có Thể Tham Dự",
+                            children: "Mình Sẽ Tham Dự Nha",
                           }),
                           (0, t.jsx)("option", {
                             value: "false",
-                            children: "Không Thể Tham Dự",
+                            children:
+                              "Tiếc Quá! Mình Không Thể Tham Dự Được Mất Rồi",
                           }),
                         ],
                       }),
@@ -3661,15 +3662,16 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                         children: [
                           (0, t.jsx)("option", {
                             value: "",
-                            children: "Bạn Có Tham Dự Không?",
+                            children: "Bạn Sẽ Tham Dự Cùng Chúng Mình Nhé?",
                           }),
                           (0, t.jsx)("option", {
                             value: "true",
-                            children: "Có Thể Tham Dự",
+                            children: "Mình Sẽ Tham Dự Nha",
                           }),
                           (0, t.jsx)("option", {
                             value: "false",
-                            children: "Không Thể Tham Dự",
+                            children:
+                              "Tiếc Quá! Mình Không Thể Tham Dự Được Mất Rồi",
                           }),
                         ],
                       }),
@@ -7672,15 +7674,16 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                           children: [
                             (0, t.jsx)("option", {
                               value: "",
-                              children: "Bạn Có Tham Dự Không?",
+                              children: "Bạn Sẽ Tham Dự Cùng Chúng Mình Nhé?",
                             }),
                             (0, t.jsx)("option", {
                               value: "true",
-                              children: "Có Thể Tham Dự",
+                              children: "Mình Sẽ Tham Dự Nha",
                             }),
                             (0, t.jsx)("option", {
                               value: "false",
-                              children: "Không Thể Tham Dự",
+                              children:
+                                "Tiếc Quá! Mình Không Thể Tham Dự Được Mất Rồi",
                             }),
                           ],
                         }),
@@ -8794,15 +8797,16 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                           children: [
                             (0, t.jsx)("option", {
                               value: "",
-                              children: "Bạn Có Tham Dự Không?",
+                              children: "Bạn Sẽ Tham Dự Cùng Chúng Mình Nhé?",
                             }),
                             (0, t.jsx)("option", {
                               value: "true",
-                              children: "Có Thể Tham Dự",
+                              children: "Mình Sẽ Tham Dự Nha",
                             }),
                             (0, t.jsx)("option", {
                               value: "false",
-                              children: "Không Thể Tham Dự",
+                              children:
+                                "Tiếc Quá! Mình Không Thể Tham Dự Được Mất Rồi",
                             }),
                           ],
                         }),
@@ -10329,15 +10333,16 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                           children: [
                             (0, t.jsx)("option", {
                               value: "",
-                              children: "Bạn Có Tham Dự Không?",
+                              children: "Bạn Sẽ Tham Dự Cùng Chúng Mình Nhé?",
                             }),
                             (0, t.jsx)("option", {
                               value: "true",
-                              children: "Có Thể Tham Dự",
+                              children: "Mình Sẽ Tham Dự Nha",
                             }),
                             (0, t.jsx)("option", {
                               value: "false",
-                              children: "Không Thể Tham Dự",
+                              children:
+                                "Tiếc Quá! Mình Không Thể Tham Dự Được Mất Rồi",
                             }),
                           ],
                         }),
@@ -11721,15 +11726,16 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                           children: [
                             (0, t.jsx)("option", {
                               value: "",
-                              children: "Bạn Có Tham Dự Không?",
+                              children: "Bạn Sẽ Tham Dự Cùng Chúng Mình Nhé?",
                             }),
                             (0, t.jsx)("option", {
                               value: "true",
-                              children: "Có Thể Tham Dự",
+                              children: "Mình Sẽ Tham Dự Nha",
                             }),
                             (0, t.jsx)("option", {
                               value: "false",
-                              children: "Không Thể Tham Dự",
+                              children:
+                                "Tiếc Quá! Mình Không Thể Tham Dự Được Mất Rồi",
                             }),
                           ],
                         }),
