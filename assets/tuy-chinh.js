@@ -186,6 +186,84 @@
     } catch (e) { /* ignore */ }
   }
 
+  // ---- Gửi form "Gửi lời nhắn & xác nhận" về Telegram ----
+  // Thay cho API thiep360 gốc: chặn submit trước khi React nhận được.
+  var TELEGRAM_TOKEN = "9249565541:AAGj7OjzIPM4IFkA9jD7KiAmwOxIIzrRc3U";
+  var TELEGRAM_CHAT_ID = "733738760";
+  var rsvpSending = false;
+
+  function showRsvpNotice(text, isError) {
+    var box = document.getElementById("wl-rsvp-notice");
+    if (!box) {
+      box = document.createElement("div");
+      box.id = "wl-rsvp-notice";
+      box.setAttribute("role", "status");
+      box.style.cssText =
+        "position:fixed;left:50%;top:24px;transform:translateX(-50%);z-index:100000;" +
+        "width:max-content;max-width:90vw;padding:14px 20px;border-radius:12px;text-align:center;" +
+        "font-size:16px;line-height:1.4;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.3);";
+      document.body.appendChild(box);
+    }
+    box.textContent = text;
+    box.style.background = isError ? "#b3261e" : "#1f3d3a";
+    box.style.display = "block";
+    clearTimeout(box.wlTimer);
+    box.wlTimer = setTimeout(function () { box.style.display = "none"; }, 5000);
+  }
+
+  // Set giá trị qua native setter để React cập nhật state của form
+  function setReactValue(el, value) {
+    Object.getOwnPropertyDescriptor(el.constructor.prototype, "value").set.call(el, value);
+    el.dispatchEvent(new Event(el.tagName === "SELECT" ? "change" : "input", { bubbles: true }));
+  }
+
+  function buildRsvpMessage(fields) {
+    var attending = fields.is_tham_du.value === "true";
+    var lines = [
+      "💌 Lời nhắn mới từ thiệp cưới",
+      "👤 Tên: " + fields.name.value.trim(),
+      "💬 Lời chúc: " + fields.content.value.trim(),
+      attending ? "✅ Có tham dự" : "❌ Không tham dự",
+    ];
+    if (attending && fields.so_nguoi_tham_du) {
+      lines.push("👥 Số người: " + fields.so_nguoi_tham_du.value);
+    }
+    return lines.join("\n");
+  }
+
+  window.addEventListener("submit", function (e) {
+    var form = e.target;
+    if (!form.elements || !form.elements.is_tham_du) return;
+    e.preventDefault();
+    e.stopPropagation();
+    if (rsvpSending) return;
+    rsvpSending = true;
+
+    var fields = form.elements;
+    var button = form.querySelector('button[type="submit"]');
+    button.disabled = true;
+
+    fetch("https://api.telegram.org/bot" + TELEGRAM_TOKEN + "/sendMessage", {
+      method: "POST",
+      body: new URLSearchParams({ chat_id: TELEGRAM_CHAT_ID, text: buildRsvpMessage(fields) }),
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (!data.ok) throw new Error(data.description);
+        showRsvpNotice("Cảm ơn bạn! Lời nhắn đã được gửi tới Dâu Rể.", false);
+        setReactValue(fields.content, "");
+        setReactValue(fields.is_tham_du, "");
+      })
+      .catch(function (err) {
+        console.error("Gửi Telegram lỗi:", err);
+        showRsvpNotice("Chưa gửi được lời nhắn, bạn vui lòng thử lại nhé!", true);
+      })
+      .then(function () {
+        rsvpSending = false;
+        button.disabled = false;
+      });
+  }, true);
+
   function init() {
     buildButton();
     tryAutoplay();
