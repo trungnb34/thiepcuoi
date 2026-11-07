@@ -169,7 +169,7 @@
                 (0, t.jsxs)("p", {
                   className: "text-xs md:text-[26px] !leading-snug text-nowrap",
                   children: [
-                    "THƯ MỜI THAM DỰ ",
+                    "TRÂN TRỌNG KÍNH MỜI THAM DỰ ",
                     ((a = e.weddingName),
                     a?.toString().trim()
                       ? a.toString().toUpperCase()

@@ -441,7 +441,7 @@
                         variants: v,
                         className: `${n.SVNMightiest.className} text-2xl md:text-5xl w-full`,
                         children: [
-                          "THƯ MỜI THAM DỰ",
+                          "TRÂN TRỌNG KÍNH MỜI THAM DỰ",
                           " ",
                           G(e.formData.ten_le?.toString()).toUpperCase(),
                           " ",
@@ -1784,7 +1784,7 @@
                         variants: v,
                         className: `${n.SVNMightiest.className} text-2xl md:text-5xl w-full`,
                         children: [
-                          "THƯ MỜI THAM DỰ",
+                          "TRÂN TRỌNG KÍNH MỜI THAM DỰ",
                           " ",
                           G(e.formData.ten_le?.toString()).toUpperCase(),
                           " ",

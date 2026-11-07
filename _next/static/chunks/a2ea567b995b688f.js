@@ -6746,7 +6746,7 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                 (0, t.jsxs)("p", {
                   className: "text-xs md:text-[26px] !leading-snug text-nowrap",
                   children: [
-                    "THƯ MỜI THAM DỰ ",
+                    "TRÂN TRỌNG KÍNH MỜI THAM DỰ ",
                     ((a = e.weddingName),
                     a?.toString().trim()
                       ? a.toString().toUpperCase()
@@ -8481,7 +8481,7 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                   className: "flex flex-wrap justify-center",
                   children: (0, t.jsx)(a.motion.p, {
                     className: `md:pt-5 pt-3 pl-3 pr-3 border-t-2 border-[black] md:border-t-4 text-[38px] md:text-[70px] text-[black] ${u.EphesisRegular.className}`,
-                    children: "Thư Mời",
+                    children: "TRÂN TRỌNG KÍNH MỜI",
                   }),
                 }),
                 (0, t.jsx)("div", {
@@ -9601,7 +9601,7 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                 className:
                   "text-[19px] md:text-4xl font-bold !leading-snug text-nowrap",
                 children: [
-                  "THƯ MỜI THAM DỰ ",
+                  "TRÂN TRỌNG KÍNH MỜI THAM DỰ ",
                   ((a = e.weddingName),
                   a?.toString().trim()
                     ? a.toString().toUpperCase()
@@ -10994,7 +10994,7 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpattern
                 className:
                   "text-[19px] md:text-4xl font-bold !leading-snug text-nowrap",
                 children: [
-                  "THƯ MỜI THAM DỰ ",
+                  "TRÂN TRỌNG KÍNH MỜI THAM DỰ ",
                   ((a = e.weddingName),
                   a?.toString().trim()
                     ? a.toString().toUpperCase()

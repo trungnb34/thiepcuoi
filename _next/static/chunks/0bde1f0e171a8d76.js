@@ -575,7 +575,7 @@
                             children: (0, a.jsx)(i.motion.p, {
                               className: `md:pt-7 pt-5 px-6 md:px-12 border-t-2 border-[black] md:border-t-4 text-[38px] md:text-[70px] text-[black] ${o.Imperial.className}`,
                               animate: U,
-                              children: "Thư Mời",
+                              children: "TRÂN TRỌNG KÍNH MỜI",
                             }),
                           }),
                           w &&

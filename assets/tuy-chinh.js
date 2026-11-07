@@ -13,6 +13,15 @@
     // Nút menu tròn cam gốc + dropdown của nó (bị thay bằng nút toggle audio bên dưới)
     'button[aria-label="Mở menu"] { display: none !important; }',
     'div.fixed.bottom-3.right-3 > div.flex.flex-col { display: none !important; }',
+    // Font lấy từ trang mẫu ziuwedding.site/duongthuy2
+    '@font-face { font-family: "UTM Avo"; src: url("./assets/fonts/utm-avo.ttf") format("truetype"); font-display: swap; }',
+    '@font-face { font-family: "UVN Ke Chuyen"; src: url("./assets/fonts/uvn-ke-chuyen.ttf") format("truetype"); font-display: swap; }',
+    // Nút "Gửi lời nhắn & xác nhận": cùng font với nút "Gửi mừng cưới", giữ nguyên cỡ chữ
+    'form button[type="submit"] { font-family: UTMCafeta, "UTMCafeta Fallback" !important; font-weight: 500 !important; }',
+    // "TRÂN TRỌNG KÍNH MỜI": font + cỡ như mẫu (23.59px trên khung 420px, phóng theo màn hình; PC tối đa theo khung 896px)
+    'div.flex-wrap > p[class*="ephesisregular"] { font-family: "UTM Avo", sans-serif !important; font-weight: 400 !important; font-size: min(calc(100vw * 23.59 / 420), 50.33px) !important; line-height: 1.6 !important; }',
+    // Tên khách ("Bạn Lan"): chỉ đổi font như mẫu, giữ nguyên cỡ chữ
+    'h1[class*="viceroyjf"] { font-family: "UVN Ke Chuyen", serif !important; font-weight: 400 !important; }',
   ].join("\n");
   var root = document.documentElement;
   var attach = function () { if (!style.isConnected) root.appendChild(style); };

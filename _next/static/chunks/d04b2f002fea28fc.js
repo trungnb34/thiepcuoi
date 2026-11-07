@@ -590,7 +590,7 @@
                             children: (0, a.jsx)(i.motion.p, {
                               className: `md:pt-5 pt-3 pl-3 pr-3 border-t-2 border-[rgba(0,50,99,1)] md:border-t-4 text-[38px] md:text-[70px] text-[rgba(0,50,99,1)] ${o.EphesisRegular.className}`,
                               animate: O,
-                              children: "Thư Mời",
+                              children: "TRÂN TRỌNG KÍNH MỜI",
                             }),
                           }),
                           y &&
@@ -5919,7 +5919,7 @@
                             children: (0, a.jsx)(i.motion.p, {
                               className: `md:pt-7 pt-5 px-6 md:px-12 border-t-2 border-[black] md:border-t-4 text-[38px] md:text-[70px] text-[black] ${o.Imperial.className}`,
                               animate: E,
-                              children: "Thư Mời",
+                              children: "TRÂN TRỌNG KÍNH MỜI",
                             }),
                           }),
                           y &&
@@ -7465,7 +7465,7 @@
                       (0, a.jsx)(v.motion.h1, {
                         variants: P,
                         className: `text-[24px] md:text-[42px] tracking-[0.14em] ${r.SVNMightiest.className} w-full`,
-                        children: "Thư Mời Cưới",
+                        children: "TRÂN TRỌNG KÍNH MỜI Cưới",
                       }),
                       (0, a.jsxs)(v.motion.h1, {
                         variants: Y,
@@ -7686,7 +7686,7 @@
                           e.imagesAlbum.find(
                             (e) => "banner_image_url" === e.field_code,
                           )?.image_url || void 0,
-                        alt: "Ảnh thư mời",
+                        alt: "Ảnh TRÂN TRỌNG KÍNH MỜI",
                       }),
                       (0, a.jsx)("div", {
                         className:
@@ -7700,7 +7700,7 @@
                         className: `absolute text-2xl md:text-[55px] text-center w-full bottom-[3px] md:bottom-[20px]  ${r.SVNMightiest.className} text-[rgba(90,105,70,1.000)]`,
                         children: (0, a.jsx)("h1", {
                           className: "!border-b-0",
-                          children: "THƯ MỜI THAM DỰ TIỆC CƯỚI",
+                          children: "TRÂN TRỌNG KÍNH MỜI THAM DỰ TIỆC CƯỚI",
                         }),
                       }),
                     ],
@@ -8854,7 +8854,7 @@
                         variants: f,
                         className: `${r.SVNMightiest.className} text-2xl md:text-5xl w-full`,
                         children: [
-                          "THƯ MỜI THAM DỰ",
+                          "TRÂN TRỌNG KÍNH MỜI THAM DỰ",
                           " ",
                           U(e.formData.ten_le?.toString()).toUpperCase(),
                           " ",
@@ -10155,7 +10155,7 @@
                           variants: j,
                           className: `${r.SVNMightiest.className} text-2xl md:text-5xl w-full`,
                           children: [
-                            "THƯ MỜI THAM DỰ",
+                            "TRÂN TRỌNG KÍNH MỜI THAM DỰ",
                             " ",
                             U(e.formData.ten_le?.toString()).toUpperCase(),
                             " ",
@@ -15664,7 +15664,7 @@
                             children: (0, a.jsx)(i.motion.p, {
                               className: `md:pt-5 pt-3 pl-3 pr-3 border-t-2 border-[rgba(0,50,99,1)] md:border-t-4 text-[38px] md:text-[70px] text-[rgba(0,50,99,1)] ${o.EphesisRegular.className}`,
                               animate: O,
-                              children: "Thư Mời",
+                              children: "TRÂN TRỌNG KÍNH MỜI",
                             }),
                           }),
                           y &&
@@ -19087,7 +19087,7 @@
                             children: (0, a.jsx)(i.motion.p, {
                               className: `md:pt-7 pt-5 px-6 md:px-12 border-t-2 border-[black] md:border-t-4 text-[38px] md:text-[70px] text-[black] ${o.Imperial.className}`,
                               animate: E,
-                              children: "Thư Mời",
+                              children: "TRÂN TRỌNG KÍNH MỜI",
                             }),
                           }),
                           y &&
@@ -27591,7 +27591,7 @@
                       (0, a.jsx)(v.motion.h1, {
                         variants: P,
                         className: `text-[24px] md:text-[42px] tracking-[0.14em] ${r.SVNMightiest.className} w-full`,
-                        children: "Thư Mời Cưới",
+                        children: "TRÂN TRỌNG KÍNH MỜI Cưới",
                       }),
                       (0, a.jsxs)(v.motion.h1, {
                         variants: Y,
@@ -27812,7 +27812,7 @@
                           e.imagesAlbum.find(
                             (e) => "banner_image_url" === e.field_code,
                           )?.image_url || void 0,
-                        alt: "Ảnh thư mời",
+                        alt: "Ảnh TRÂN TRỌNG KÍNH MỜI",
                       }),
                       (0, a.jsx)("div", {
                         className:
@@ -27826,7 +27826,7 @@
                         className: `absolute text-2xl md:text-[55px] text-center w-full bottom-[3px] md:bottom-[20px]  ${r.SVNMightiest.className} text-[rgba(90,105,70,1.000)]`,
                         children: (0, a.jsx)("h1", {
                           className: "!border-b-0",
-                          children: "THƯ MỜI THAM DỰ TIỆC CƯỚI",
+                          children: "TRÂN TRỌNG KÍNH MỜI THAM DỰ TIỆC CƯỚI",
                         }),
                       }),
                     ],
@@ -28845,7 +28845,8 @@
                         "w-full flex flex-col text-[15px] justify-center items-center leading-[1.2] md:leading-1",
                       children: [
                         (0, a.jsx)("p", {
-                          className: "text-xl md:text-3xl w-full",
+                          className:
+                            "text-3xl md:text-5xl utmcafeta_1a794a95-module__BJo_pW__className",
                           children: "Chú Rể",
                         }),
                         (0, a.jsx)("h1", {
@@ -28930,7 +28931,8 @@
                         "w-full flex flex-col text-[15px] justify-center items-center leading-[1.2] md:leading-[1]",
                       children: [
                         (0, a.jsx)("p", {
-                          className: "text-xl md:text-3xl w-full",
+                          className:
+                            "text-3xl md:text-5xl utmcafeta_1a794a95-module__BJo_pW__className",
                           children: "Cô Dâu",
                         }),
                         (0, a.jsx)("h1", {
@@ -28982,7 +28984,7 @@
                   children: (0, a.jsx)("p", {
                     className: `md:pt-5 pt-3 pl-3 pr-3 text-4xl md:text-7xl ${n}`,
                     style: { color: r },
-                    children: "Thư Mời",
+                    children: "TRÂN TRỌNG KÍNH MỜI",
                   }),
                 }),
                 l &&
@@ -30664,7 +30666,8 @@
                         "w-full flex flex-col text-[15px] justify-center items-center leading-[1.2] md:leading-[1]",
                       children: [
                         (0, a.jsx)("p", {
-                          className: "text-xl md:text-3xl w-full",
+                          className:
+                            "text-3xl md:text-5xl utmcafeta_1a794a95-module__BJo_pW__className",
                           children: "Cô Dâu",
                         }),
                         (0, a.jsx)("h1", {
@@ -30749,7 +30752,8 @@
                         "w-full flex flex-col text-[15px] justify-center items-center leading-[1.2] md:leading-1",
                       children: [
                         (0, a.jsx)("p", {
-                          className: "text-xl md:text-3xl w-full",
+                          className:
+                            "text-3xl md:text-5xl utmcafeta_1a794a95-module__BJo_pW__className",
                           children: "Chú Rể",
                         }),
                         (0, a.jsx)("h1", {
@@ -30801,7 +30805,7 @@
                   children: (0, a.jsx)("p", {
                     className: `md:pt-5 pt-3 pl-3 pr-3 text-4xl md:text-7xl ${n}`,
                     style: { color: r },
-                    children: "Thư Mời",
+                    children: "TRÂN TRỌNG KÍNH MỜI",
                   }),
                 }),
                 l &&
